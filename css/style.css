@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(../Photo/back1.jpg); /*中间rgba是给背景图加一层暗的滤镜*/
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+.hideimagebox {
+	width: 380px;
+	height: 90%;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 1);
+	margin: 0;
+	padding: 0;
+}
+.imagebox {
+	width: 400px;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.imagebox img {
+	width: 400px;
+	height: auto;
+	margin-left: 10px;
+}
+.comment {
+	width: 1300px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 450px;
+	top: 100px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.comment h1 {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-size: 5em;
+	width: 90%;
+	position: relative;
+	left: 100px;
+	top: 50px;
+	animation: h1 2s;
+}
+@keyframes h1 {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.comment #heng {
+	background-color: #7baf74;
+	height: 5px;
+	width: 400px;
+	position: relative;
+	left: 100px;
+	top: 80px;
+}
+.comment #text {
+	width: 40em;
+	height: 500px;
+}
+.comment p {
+	font-size: 1.2em;
+	color: white;
+	position: relative;
+	top: 180px;
+	left: 100px;
+}
+.comment img {
+	width: 400px;
+	height: auto;
+	position: relative;
+	top: -400px;
+	right: 100px;
+	float: right;
+}
+.sidebar .icon-J {
+	color: #cb45ff;
+}
+.sidebar .icon-Cyclone {
+	color: #558d42;
+}
+.sidebar .icon-Heat {
+	color: #d81e00;
+}
+.sidebar .icon-Metal {
+	color: #ede3ec;
+}
+.sidebar .icon-Luna {
+	color: #feff5e;
+}
+.sidebar .icon-Trigger {
+	color: #325990;
+}
+.sidebar .icon-Fang {
+	color: #28ddf1;
+}
+
+.sidebar label {
+	display: relative;
+}
+.sidebar label .icon {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sidebar label .icon i {
+	font-size: 120px;
+}
+.sidebar label .icon::before {
+	content: "";
+	position: absolute;
+	width: calc(100% - 10px);
+	height: calc(50% - 4px);
+	z-index: -1;
+}
+.sidebar label .icon .icon-J:hover {
+	color: black;
+	text-shadow: 0 0 15px #cb45ff, 0 0 25px #cb45ff;
+}
+
+.sidebar label .icon .icon-Cyclone:hover {
+	color: #558d42;
+	text-shadow: 0 0 15px #45ff55, 0 0 25px #111;
+}
+
+.sidebar label .icon .icon-Heat:hover {
+	color: #d81e00;
+	text-shadow: 0 0 15px #e41a1a, 0 0 25px #0f0000;
+}
+
+.sidebar label .icon .icon-Metal:hover {
+	color: #ede3ec;
+	text-shadow: 0 0 15px #a598a3, 0 0 25px #a598a3;
+}
+
+.sidebar label .icon .icon-Luna:hover {
+	color: #feff5e;
+	text-shadow: 0 0 15px #fafca2, 0 0 25px #fafca2;
+}
+
+.sidebar label .icon .icon-Trigger:hover {
+	color: #325990;
+	text-shadow: 0 0 15px #a4d5e9, 0 0 25px #a4d5e9;
+}
+
+.sidebar label .icon .icon-Fang:hover {
+	color: #28ddf1;
+	text-shadow: 0 0 15px #5fbbdd, 0 0 25px #02222e;
+}

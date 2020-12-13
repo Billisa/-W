@@ -1,0 +1,147 @@
+<!--
+ * @Author: Travis Scott
+ * @Date: 2020-06-30 02:23:11
+ * @LastEditTime: 2020-07-15 04:24:45
+ * @FilePath: \期末2.0\contact.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>加个微信</title>
+		<link rel="stylesheet" href="./css/contact.css" />
+		<link
+			rel="stylesheet"
+			href="http://at.alicdn.com/t/font_1912596_1qvjv6px0by.css"
+		/>
+		<style type="text/css">
+			.navigation {
+				margin: 0;
+				padding: 0;
+				height: 10%;
+				width: 100%;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+			.navigation .logo img {
+				float: left;
+				width: auto;
+				height: 70px;
+				position: relative;
+				left: 10px;
+				top: 10px;
+				opacity: 0.8;
+			}
+			.navigation ul {
+				display: flex;
+				justify-content: center;
+				list-style-type: none;
+				z-index: 99;
+				animation: ul 2s;
+			}
+			@keyframes ul {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+			.navigation ul li {
+				display: inline-block;
+				margin-left: 10px;
+				margin-top: 10px;
+				min-width: 100px;
+				min-height: 80px;
+			}
+
+			.navigation ul li a {
+				display: flex;
+				justify-content: center;
+				font-size: 40px;
+				font-family: PingFang SC;
+				text-decoration: none;
+				color: rgba(255, 255, 255, 0.5);
+				padding: 13px 120px;
+			}
+			.navigation ul li a:hover {
+				background-color: rgba(98, 195, 255, 0.5);
+				color: rgba(255, 227, 15, 0.8);
+			}
+
+			.navigation ul li.active a {
+				background-color:rgba(255, 227, 15, 0.5);
+				color: rgba(98, 195, 255, 0.8);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navigation">
+			<div class="logo">
+				<img src="./Photo/LOGO.png" alt="logo" />
+			</div>
+			<ul>
+				<li><a href="./KK.html">Hobby</a></li>
+				<li><a href="./index.html">Rider</a></li>
+				<li class="active"><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<div class="switch">
+			<div class="left">
+				<div class="item">
+					<i class="iconfont icon-jianhao"></i>
+				</div>
+				<div class="item">
+					<div class="action"></div>
+				</div>
+				<div class="item">
+					<div class="action"></div>
+					<div class="action"></div>
+					<div class="action"></div>
+					<div class="action"></div>
+				</div>
+				<div class="item">
+					<div class="action"></div>
+				</div>
+			</div>
+			<div class="body">
+				<div class="icon">
+					<img src="nintendo-switch.svg" />
+				</div>
+				<div class="text">
+					<div class="n">Nintendo</div>
+					<div class="s">Switch</div>
+				</div>
+				<form class="contact-form" action="contact.html" method="post">
+					<input type="text" class="contact-form-text" placeholder="Your name">
+					<input type="email" class="contact-form-text" placeholder="Your email">
+					<input type="text" class="contact-form-text" placeholder="Your phone">
+					<textarea class="contact-form-text" placeholder="请开始你的表演~"></textarea>
+					
+			</div>
+			<div class="right">
+				<div class="item">
+					<i class="iconfont icon-jiahao"></i>
+				</div>
+				<div class="item">
+					<div class="action"></div>
+					<div class="action"></div>
+					<div class="action"></div>
+					<div class="action"></div>
+				</div>
+				<div class="item">
+					<input type="submit" class="action" value="变身">
+				</div>
+				<div class="item">
+					<div class="action"></div>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="backlogo">
+			<img src="./Photo/LOGO.png" alt="">
+		</div> -->
+	</body>
+</html>
+<SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

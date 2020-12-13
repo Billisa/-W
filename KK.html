@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>KK</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+		/>
+		<link rel="stylesheet" href="./kk.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="http://at.alicdn.com/t/font_1912062_e6cioopizgv.css"
+		/>
+		<style type="text/css">
+			.navigation {
+				position: absolute;
+				top: 0;
+				margin: 0;
+				padding: 0;
+				height: 10%;
+				width: 100%;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+			.navigation .logo img {
+				float: left;
+				width: auto;
+				height: 70px;
+				position: relative;
+				left: 10px;
+				top: 10px;
+				opacity: 0.8;
+			}
+			.navigation ul {
+				display: flex;
+				justify-content: center;
+				list-style-type: none;
+				z-index: 99;
+				animation: ul 2s;
+			}
+			@keyframes ul {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+			.navigation ul li {
+				display: inline-block;
+				margin-left: 10px;
+				margin-top: 10px;
+				min-width: 100px;
+				min-height: 80px;
+			}
+
+			.navigation ul li a {
+				display: flex;
+				justify-content: center;
+				font-size: 40px;
+				font-family: PingFang SC;
+				text-decoration: none;
+				color: rgba(255, 255, 255, 0.5);
+				padding: 13px 120px;
+			}
+			.navigation ul li a:hover {
+				background-color: rgba(98, 195, 255, 0.5);
+				color: rgba(255, 227, 15, 0.8);
+			}
+
+			.navigation ul li.active a {
+				background-color: rgba(255, 227, 15, 0.5);
+				color: rgba(98, 195, 255, 0.8);
+			}
+		</style>
+	</head>
+	<body>
+		<script src="https://codepen.io/shshaw/pen/QmZYMG.js"></script>
+
+		<div class="navigation">
+			<div class="logo">
+				<img src="./Photo/LOGO.png" alt="logo" />
+			</div>
+			<ul>
+				<li class="active"><a href="#">Human</a></li>
+				<li><a href="./index.html">Rider</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			</ul>
+		</div>
+
+		<div id="app" data-state="0">
+			<div class="ui-big-images">
+				<div class="ui-big-image" data-key="0">
+					<img src="./Photo/cyclone.jpg" alt="" />
+				</div>
+				<div class="ui-big-image" data-key="1">
+					<img src="./Photo/joker.jpg" alt="" />
+				</div>
+				<div class="ui-big-image" data-key="2">
+					<img src="./Photo/heat.jpg" alt="" />
+				</div>
+				<div class="ui-big-image" data-key="3">
+					<img src="./Photo/metal.jpg" alt="" />
+				</div>
+				<div class="ui-big-image" data-key="4">
+					<img src="./Photo/luna.jpg" alt="" />
+				</div>
+				<div class="ui-big-image" data-key="5">
+					<img src="./Photo/trigger.jpg" alt="" />
+				</div>
+				<div class="ui-big-image" data-key="6">
+					<img src="./Photo/fang.jpg" alt="" />
+				</div>
+			</div>
+			<div class="ui-thumbnails">
+				<div class="ui-thumbnail" tabindex="-1" data-key="0">
+					<img src="./Photo/cyclone.jpg" alt="" />
+					<div class="ui-cuticle" data-flip-key="cuticle"></div>
+				</div>
+				<div class="ui-thumbnail" tabindex="-1" data-key="1">
+					<img src="./Photo/joker.jpg" alt="" />
+					<div class="ui-cuticle" data-flip-key="cuticle"></div>
+				</div>
+				<div class="ui-thumbnail" tabindex="-1" data-key="2">
+					<img src="./Photo/heat.jpg" alt="" />
+					<div class="ui-cuticle" data-flip-key="cuticle"></div>
+				</div>
+				<div class="ui-thumbnail" tabindex="-1" data-key="3">
+					<img src="./Photo/metal.jpg" alt="" />
+					<div class="ui-cuticle" data-flip-key="cuticle"></div>
+				</div>
+				<div class="ui-thumbnail" tabindex="-1" data-key="4">
+					<img src="./Photo/luna.jpg" alt="" />
+					<div class="ui-cuticle" data-flip-key="cuticle"></div>
+				</div>
+				<div class="ui-thumbnail" tabindex="-1" data-key="5">
+					<img src="./Photo/trigger.jpg" alt="" />
+					<div class="ui-cuticle" data-flip-key="cuticle"></div>
+				</div>
+				<div class="ui-thumbnail" tabindex="-1" data-key="6">
+					<img src="./Photo/fang.jpg" alt="" />
+					<div class="ui-cuticle" data-flip-key="cuticle"></div>
+				</div>
+			</div>
+			<div class="ui-content">
+				<nav class="ui-nav">
+					<button id="prev" tabindex="-1" title="Previous">&lt;</button>
+					<button id="next" tabindex="-1" title="Next">&gt;</button>
+				</nav>
+
+				<div class="ui-articles">
+					<article class="ui-article" data-key="0">
+						<h2 class="ui-heading">Cyclone&疾风</h2>
+						<p class="ui-paragraph">
+							提高速度。令与其变身之形态的武器拥有风效果，同时能强制吸收周围空气使气压产生变化，形成风。
+						</p>
+					</article>
+					<article class="ui-article" data-key="1">
+						<h2 class="ui-heading">Joker&王牌</h2>
+						<p class="ui-paragraph">
+							增强自身的运动细胞和格斗技术，以拳脚格斗作为攻击，能够根据使用者的情感变化强化自身能力。
+						</p>
+					</article>
+					<article class="ui-article" data-key="2">
+						<h2 class="ui-heading">Heat&炽热</h2>
+						<p class="ui-paragraph">
+							带来高热与强烈的斗争本能。令与其变身之形态的武器拥有火焰效果。
+						</p>
+					</article>
+					<article class="ui-article" data-key="3">
+						<h2 class="ui-heading">Metal&金属</h2>
+						<p class="ui-paragraph">
+							增强身体硬度和攻击拥有斗士般的体质，能使用武器“操虫棍”。
+						</p>
+					</article>
+					<article class="ui-article" data-key="4">
+						<h2 class="ui-heading">Luna&月神</h2>
+						<p class="ui-paragraph">
+							令与其变身之形态的武器弯曲延伸，异能弯曲光束使子弹可以跟踪敌人。
+						</p>
+					</article>
+					<article class="ui-article" data-key="5">
+						<h2 class="ui-heading">Trigger&扳机</h2>
+						<p class="ui-paragraph">
+							拥有狙击手般的射击能力，能使用武器Trigger Magnum。
+						</p>
+					</article>
+					<article class="ui-article" data-key="6">
+						<h2 class="ui-heading">Fang&獠牙</h2>
+						<p class="ui-paragraph">
+							Memory平时以机械暴龙形态出现。具有自我意识，会不择手段保护来人。<br />
+							因为只有在翔太郎身体配适度最高的Joker形态下才能控制Fang，所以只有FangJoker形态登场。<br />
+							唯一以菲利普为主体的记忆体。
+						</p>
+					</article>
+				</div>
+			</div>
+		</div>
+		<!-- partial -->
+		<script src="https://unpkg.com/flipping@1.1.0/dist/flipping.web.js"></script>
+		<script src="./script.js"></script>
+	</body>
+</html>
+<SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

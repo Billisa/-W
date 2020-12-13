@@ -1,0 +1,335 @@
+<!--
+ * @Author: Travis Scott
+ * @Date: 2020-06-29 22:20:03
+ * @LastEditTime: 2020-07-15 06:40:55
+ * @FilePath: \期末2.0\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="http://at.alicdn.com/t/font_1912062_e6cioopizgv.css"
+		/>
+		<title>首页</title>
+		<style type="text/css">
+			.navigation {
+				margin: 0;
+				padding: 0;
+				height: 10%;
+				width: 100%;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+			.navigation .logo img {
+				float: left;
+				width: auto;
+				height: 70px;
+				position: relative;
+				left: 10px;
+				top: 10px;
+				opacity: 0.8;
+			}
+			.navigation ul {
+				display: flex;
+				margin: 0;
+				padding: 0;
+				justify-content: center;
+				list-style-type: none;
+				z-index: 99;
+				animation: ul 2s;
+			}
+			@keyframes ul {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+			.navigation ul li {
+				display: inline-block;
+				margin-left: 10px;
+				margin-top: 10px;
+				min-width: 100px;
+				min-height: 80px;
+			}
+
+			.navigation ul li a {
+				display: flex;
+				justify-content: center;
+				font-size: 40px;
+				font-family: PingFang SC;
+				text-decoration: none;
+				color: rgba(255, 255, 255, 0.5);
+				padding: 13px 120px;
+			}
+			.navigation ul li a:hover {
+				background-color: rgba(98, 195, 255, 0.5);
+				color: rgba(255, 227, 15, 0.8);
+			}
+
+			.navigation ul li.active a {
+				background-color: rgba(255, 227, 15, 0.5);
+				color: rgba(98, 195, 255, 0.8);
+			}
+			.sidebar {
+				position: absolute;
+				right: 0;
+				top: 100px;
+				padding: 0;
+				height: 100%;
+				width: 120px;
+				background-color: rgba(1, 1, 3, 0.5);
+				z-index: 1;
+			}
+			.sidebar .iconfont {
+				width: 120px;
+				display: flex;
+				flex-wrap: wrap;
+				z-index: 2;
+				font-size: 120px;
+				transform: rotate(30deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navigation">
+			<div class="logo">
+				<img src="./Photo/LOGO.png" alt="logo" />
+			</div>
+			<ul>
+				<li><a href="./KK.html">Hobby</a></li>
+				<li class="active"><a href="#">Rider</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="sidebar">
+			<label>
+				<div class="icon">
+					<audio id="cyclone" src="./Audio/Cyclone .mp3"></audio>
+					<i class="iconfont icon-Cyclone" onclick="play1()"></i>
+				</div>
+			</label>
+
+			<label>
+				<div class="icon">
+					<audio id="joker" src="./Audio/Joker .mp3"></audio>
+					<i class="iconfont icon-J" onclick="play()"></i>
+				</div>
+			</label>
+
+			<label>
+				<div class="icon">
+					<audio id="heat" src="./Audio/Heat .mp3"></audio>
+					<i class="iconfont icon-Heat" onclick="play2()"></i>
+				</div>
+			</label>
+
+			<label>
+				<div class="icon">
+					<audio id="metal" src="./Audio/Metal .mp3"></audio>
+					<i class="iconfont icon-Metal" onclick="play3()"></i>
+				</div>
+			</label>
+
+			<label>
+				<div class="icon">
+					<audio id="luna" src="./Audio/Luna .mp3"></audio>
+					<i class="iconfont icon-Luna" onclick="play4()"></i>
+				</div>
+			</label>
+
+			<label>
+				<div class="icon">
+					<audio id="trigger" src="./Audio/Trigger .mp3"></audio>
+					<i class="iconfont icon-Trigger" onclick="play5()"></i>
+				</div>
+			</label>
+
+			<label>
+				<div class="icon">
+					<audio id="fang" src="./Audio/Fang .mp3"></audio>
+					<i class="iconfont icon-Fang" onclick="play6()"></i>
+				</div>
+			</label>
+		</div>
+		<div class="hideimagebox">
+			<div class="imagebox">
+				<a href="javascript:void(0);" onclick="cj()"
+					><img src="./Photo/cj.jpg" alt=""
+				/></a>
+				<a href="javascript:void(0);" onclick="hj()"
+					><img src="./Photo/hj.jpg" alt=""
+				/></a>
+				<a href="javascript:void(0);" onclick="lj()"
+					><img src="./Photo/lj.jpg" alt=""
+				/></a>
+				<a href="javascript:void(0);" onclick="hm()"
+					><img src="./Photo/hm.jpg" alt=""
+				/></a>
+				<a href="javascript:void(0);" onclick="cm()"
+					><img src="./Photo/cm.jpg" alt=""
+				/></a>
+				<a href="javascript:void(0);" onclick="lm()"
+					><img src="./Photo/lm.jpg" alt=""
+				/></a>
+				<a href="javascript:void(0);" onclick="lt()"
+					><img src="./Photo/lt.jpg" alt=""
+				/></a>
+				<a href="javascript:void(0);" onclick="ct()"
+					><img src="./Photo/ct.jpg" alt=""
+				/></a>
+				<a href="javascript:void(0);" onclick="ht()"
+					><img src="./Photo/ht2.jpg" alt=""
+				/></a>
+				<a href="javascript:void(0);" onclick="fj()"
+					><img src="./Photo/fj.jpg" alt=""
+				/></a>
+				<a href="javascript:void(0);" onclick="cjx()"
+					><img src="./Photo/cjx.jpg" alt=""
+				/></a>
+			</div>
+		</div>
+		<div class="comment">
+			<h1 id="title">疾风王牌</h1>
+			<div id="heng"></div>
+			<div id="text">
+				<p id="text_comment">
+					第一次出现于TV的第一集<br /><br /><br />
+					变身音效为“Cyclone！Joker！”<br /><br /><br />
+					疾风&王牌形态，作为W的基础形态，一边是疾风的绿色，一边是王牌的黑色<br /><br />
+					疾风记忆体，顾名思义拥有掌司风的能力，攻击时可发出锐利的空气冲击波<br /><br />
+					王牌记忆体，其能力为格斗战术，格斗技极强，且身体可以挡机关枪扫射<br /><br />
+					其必杀技为分尸踢，伴随着绿色的龙卷风，浮在空中身体分开凉拌，两边先后骑士踢
+				</p>
+			</div>
+			<img id="show" src="./Photo/origin.png" alt="" />
+		</div>
+	</body>
+	<script>
+		function cj() {
+			document.getElementById("title").innerHTML = "疾风王牌";
+			document.getElementById("heng").style.backgroundColor = "#7BAF74";
+			document.getElementById("text_comment").innerHTML =
+				"第一次出现于TV的第一集<br /><br /><br />变身音效为“Cyclone！Joker！”<br /><br /><br />疾风&王牌形态，作为W的基础形态，一边是疾风的绿色，一边是王牌的黑色<br /><br />疾风记忆体，顾名思义拥有掌司风的能力，攻击时可发出锐利的空气冲击波<br /><br />王牌记忆体，其能力为格斗战术，格斗技极强，且身体可以挡机关枪扫射<br /><br />其必杀技为分尸踢，伴随着绿色的龙卷风，浮在空中身体分开凉拌，两边先后骑士踢";
+			document.getElementById("show").src = "./photo/origin.png";
+		}
+
+		function hj() {
+			document.getElementById("title").innerHTML = "炽热王牌";
+			document.getElementById("heng").style.backgroundColor = "#BB6363";
+			document.getElementById("text_comment").innerHTML =
+				"第一次出现于TV的第二集<br /><br /><br />变身音效为“Heat！Joker！”<br /><br /><br />炽热&王牌形态，作为W的王牌的侧形态，一边是炽热的红色，一边是王牌的黑色<br /><br />炽热记忆体，顾名思义拥有掌司火的能力，攻击时炽热侧的拳中缠着红色·王牌侧的拳中缠着紫色的火焰<br /><br />王牌记忆体，其能力为格斗战术，格斗技极强，且身体可以挡机关枪扫射<br /><br />其必杀技为木大木大，跳跃在空中从中间分割，从两侧向敌人进行连续拳击";
+			document.getElementById("show").src = "./photo/heatjoker.png";
+		}
+
+		function lj() {
+			document.getElementById("title").innerHTML = "月神王牌";
+			document.getElementById("heng").style.backgroundColor = "#FCFD16";
+			document.getElementById("text_comment").innerHTML =
+				"第一次出现于TV的第一集<br /><br /><br />变身音效为“Luna！Joker！”<br /><br /><br />月神&王牌形态，作为W的王牌的侧形态，一边是月神的黄色，一边是王牌的黑色<br /><br />月神记忆体，擅长柔韧战术展开变幻自在的战斗，类似于路飞的橡胶果实，但仅限于月神侧<br /><br />王牌记忆体，其能力为格斗战术，格斗技极强，且身体可以挡机关枪扫射<br /><br />其必杀技为多重影分身术，从中间分割，在月神侧分出5体分身后同时伸直手臂进行连续攻击，最后王牌侧进行攻击";
+			document.getElementById("show").src = "./photo/lunajoker.png";
+		}
+
+		function hm() {
+			document.getElementById("title").innerHTML = "炽热金属";
+			document.getElementById("heng").style.backgroundColor = "#BB6363";
+			document.getElementById("text_comment").innerHTML =
+				"第一次出现于TV的第二集<br /><br /><br />变身音效为“Heat！Metal！”<br /><br /><br />炽热&金属形态，作为W的金属的侧形态，一边是炽热的红色，一边是金属的银色<br /><br />炽热记忆体，顾名思义拥有掌司火的能力，在与金属结合时，会让“金属铁杆”缠绕火焰<br /><br />金属记忆体，其能力为金属侧变成金属，力量防御大幅增强，并且会有专属铁杆武器<br /><br />其必杀技为杂耍火棍节目，“金属铁杆”的顶端缠绕着高热，承载着喷射的热的推进力，进行打击。也存在着搭乘硬汉战斗机上从上空急速下降的模式和发出高热火炎的模式";
+			document.getElementById("show").src = "./photo/heatmetal.png";
+		}
+
+		function cm() {
+			document.getElementById("title").innerHTML = "疾风金属";
+			document.getElementById("heng").style.backgroundColor =
+				"rgb(129 128 142)";
+			document.getElementById("text_comment").innerHTML =
+				"第一次出现于TV的第三集<br /><br /><br />变身音效为“Cyclone！Metal！”<br /><br /><br />疾风&金属形态，作为W的金属的侧形态，一边是疾风的绿色，一边是金属的银色<br /><br />疾风记忆体，顾名思义拥有拥有疾风般的速度，在与金属结合时，会让“金属铁杆”旋转速度更快，打击更快，擅长速战速决<br /><br />金属记忆体，其能力为金属侧变成金属，力量防御大幅增强，并且会有专属铁杆武器<br /><br />其必杀技为打狗棍法，“金属铁杆”的顶端缠绕着绿色的旋风，为了使其产生绿色的龙卷风而旋转并用铁杆连打<br/><br/>其二为 金属铁杆 锹甲铁杆模式”的终端锤产生像锹形虫的颚一样的风的能量，精准的夹击粉碎";
+			document.getElementById("show").src = "./photo/cyclonemetal.png";
+		}
+
+		function lm() {
+			document.getElementById("title").innerHTML = "月神金属";
+			document.getElementById("heng").style.backgroundColor = "#FCFD16";
+			document.getElementById("text_comment").innerHTML =
+				"第一次出现于TV的第四集<br /><br /><br />变身音效为“Luna！Metal！”<br /><br /><br />月神&金属形态，作为W的金属的侧形态，一边是月神的黄色，一边是金属的银色<br /><br />月神记忆体，擅长柔韧战术展开变幻自在的战斗，类似于路飞的橡胶果实，在与金属结合时，无论是身体还是铁棍，柔性都很强。是配适度最差的一组组合（月神的柔软和金属的坚硬相互克制）<br /><br />金属记忆体，其能力为金属侧变成金属，力量防御大幅增强，并且会有专属铁杆武器<br /><br />其必杀技为藤条焖猪肉，把“金属铁杆”变为鞭状，产生复数的黄色的圆盘状的能量自如地弹飞攻击敌人，全光轮从全方位攻击";
+			document.getElementById("show").src = "./photo/lunametal.png";
+		}
+
+		function lt() {
+			document.getElementById("title").innerHTML = "月神扳机";
+			document.getElementById("heng").style.backgroundColor = "#27366d";
+			document.getElementById("text_comment").innerHTML =
+				"第一次出现于TV的第六集<br /><br /><br />变身音效为“Luna！Trigger！”<br /><br /><br />月神&扳机形态，作为W的扳机的侧形态，一边是月神的黄色，一边是扳机的蓝色<br /><br />月神记忆体，擅长柔韧战术展开变幻自在的战斗，类似于路飞的橡胶果实，配合扳机能让“扳机麦林枪”的子弹自动追踪且可以转弯，类似于枪斗术，可以一秒射出240发子弹，且脚部可生成磁场<br /><br />扳机记忆体，其能力为变成一名射手，拥有专属武器“扳机麦林枪”<br /><br />其必杀技为天女散花，从“扳机麦林枪”击出无数变幻自如地改变轨道的黄色和蓝色的能量弹<br/><br/>其二为 “见闻色霸气”在战斗区域一带散布特殊粒子，使用散布在空间全体的特殊粒子感知不可视的敌人";
+			document.getElementById("show").src = "./photo/lunatrigger.png";
+		}
+
+		function ct() {
+			document.getElementById("title").innerHTML = "疾风扳机";
+			document.getElementById("heng").style.backgroundColor = "#27366d";
+			document.getElementById("text_comment").innerHTML =
+				"第一次出现于TV的第五集<br /><br /><br />变身音效为“Cyclone！Trigger！”<br /><br /><br />疾风&扳机形态，作为W的扳机的侧形态，一边是疾风的绿色，一边是扳机的蓝色<br /><br />疾风记忆体，拥有疾风般的速度，与扳机配合能让子弹发射速度极快，配适度同样极差（疾风的速度和扳机的重量相互克制）<br /><br />扳机记忆体，拥有专属武器“扳机麦林枪”<br /><br />其必杀技为龙卷风摧毁停车场，“扳机麦林枪”将绿色的小型龙卷连续发射，将敌人吹飞";
+			document.getElementById("show").src = "./photo/cyclonetrigger.png";
+		}
+
+		function ht() {
+			document.getElementById("title").innerHTML = "炽热扳机";
+			document.getElementById("heng").style.backgroundColor = "#BB6363";
+			document.getElementById("text_comment").innerHTML =
+				"第一次出现于TV的第六集<br /><br /><br />变身音效为“Heat！Trigger！”<br /><br /><br />炽热&扳机形态，作为W的扳机的侧形态，一边是炽热的红色，一边是扳机的蓝色<br /><br />炽热记忆体，拥有业火般的高温，与扳机配合能让子弹变成火焰炮弹 Boob!<br /><br />扳机记忆体，拥有专属武器“扳机麦林枪”<br /><br />其必杀技为喷射火焰，“扳机麦林枪”放出超高温的火焰放射，全身都变得超高温，压缩热能发出强力的火炎弹";
+			document.getElementById("show").src = "./photo/heattrigger.png";
+		}
+
+		function fj() {
+			document.getElementById("title").innerHTML = "獠牙王牌";
+			document.getElementById("heng").style.backgroundColor = "#fff";
+			document.getElementById("text_comment").innerHTML =
+				"第一次出现于TV的第十六集<br /><br /><br />变身音效为“Fang！Joker！”<br /><br /><br />獠牙&王牌形态，作为W的唯一一个菲利普为主体变身的形态，一边是獠牙的白色，一边是王牌的黑色<br /><br />獠牙记忆体，平时是一只会自我保护宿主的恐龙，拥有常人十几倍的握力。弹动“恐龙角”一回可召唤武装“獠牙臂刃”，弹动两回可召唤武装“獠牙肩刃”，弹动三回发动必杀技“獠牙足刃回旋踢”<br /><br />王牌记忆体，拥有超强的格斗能力<br /><br />其必杀技为旋转跳跃我闭着眼，用跳踢·前踢·回旋踢·跳回旋踢的要领斩裂敌人。命中的话，与恐龙的头部一样的气息一起将记忆体中描绘的「F」的文字浮现出来";
+			document.getElementById("show").src = "./photo/fangjoker.png";
+		}
+
+		function cjx() {
+			document.getElementById("title").innerHTML = "疾风王牌极限";
+			document.getElementById("heng").style.backgroundColor = "#fff";
+			document.getElementById("text_comment").innerHTML =
+				"第一次出现于TV的第三十二集集<br /><br /><br />变身音效为“Xtreme！”<br /><br /><br />疾风&王牌♂极限形态，作为W的最终形态，一边是疾风的绿色，一边是王牌的黑色，然后中间又分开一条白色<br /><br />使用“W驱动器”，在配合“疾风记忆体”与“王牌记忆体”的基础上再加之“极限记忆体”变身的最终形态，以“棱镜耀光”为武器<br /><br />其必杀技为亮瞎你的狗眼，在“耀光圣盾”先后装填3支灵魂记忆体和1支躯体记忆体后扣动扳机伴随着带感的音效发动，在使用“王牌记忆体”的场合下从“Prism Muzzle”放出了七色的光线<br /><br />其二为“普通挥砍”，在“耀光圣盾”先后装填“疾风记忆体”、“炽热记忆体”、“月神记忆体”与“王牌记忆体”后扣动扳机再一次伴随着带感的音效，再在“棱镜剑刃”装填“棱镜记忆体”后扣动扳机伴随着“Prism！Maximum Drive！”的音效发动。用“棱镜记忆体”的力量把记忆体的能量聚集起来用“棱镜圣剑”斩裂敌人";
+			document.getElementById("show").src = "./photo/CJX.png";
+		}
+
+		function play() {
+			var audio = document.getElementById("joker");
+			audio.play();
+		}
+		function play1() {
+			var audio = document.getElementById("cyclone");
+			audio.play();
+		}
+		function play2() {
+			var audio = document.getElementById("heat");
+			audio.play();
+		}
+		function play3() {
+			var audio = document.getElementById("metal");
+			audio.play();
+		}
+		function play4() {
+			var audio = document.getElementById("luna");
+			audio.play();
+		}
+		function play5() {
+			var audio = document.getElementById("trigger");
+			audio.play();
+		}
+		function play6() {
+			var audio = document.getElementById("fang");
+			audio.play();
+		}
+	</script>
+</html>
+<SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

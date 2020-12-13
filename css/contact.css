@@ -1,0 +1,217 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(../Photo/back3.jpg); /*中间rgba是给背景图加一层暗的滤镜*/
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+.switch {
+	width: 1000px;
+	height: 400px;
+	border-radius: 80px;
+	font-size: 0;
+	margin: 400px auto;
+}
+.switch .left {
+	display: inline-block;
+	vertical-align: top;
+	width: 150px;
+	height: 100%;
+	border-top-left-radius: 80px;
+	border-bottom-left-radius: 80px;
+	background-color: rgba(0, 140, 255, 0.5);
+}
+.switch .left .item {
+	padding: 10px;
+	text-align: right;
+}
+.switch .left .item .iconfont {
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+.switch .left .item:nth-child(2) {
+	padding: 20px 10px;
+}
+.switch .left .item:nth-child(2) .action {
+	background-color: black;
+	width: 70px;
+	height: 70px;
+	border-radius: 40px;
+	margin: 0 auto;
+}
+
+.switch .left .item:nth-child(3) {
+	transform: rotate(45deg);
+}
+.switch .left .item:nth-child(3) .action {
+	width: 35px;
+	height: 35px;
+	background-color: black;
+	border-radius: 20px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px;
+}
+
+.switch .left .item:nth-child(4) {
+	text-align: right;
+}
+.switch .left .item:nth-child(4) .action {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: black;
+}
+
+.switch .body {
+	width: calc(100% - 300px);
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	box-sizing: border-box;
+	border: 30px solid rgba(43, 43, 43, 0.8);
+	text-align: center;
+}
+.switch .body .icon {
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.switch .body .icon img {
+	width: 80px;
+	opacity: 0.1;
+	z-index: 99;
+}
+
+.switch .body .text {
+	height: 50%;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.2);
+	z-index: 1;
+}
+
+.switch .body .text .n {
+	font-size: 22px;
+	letter-spacing: 0.1em;
+}
+
+.switch .body .text .s {
+	font-size: 30px;
+	letter-spacing: 0.1em;
+}
+
+.switch .right {
+	display: inline-block;
+	vertical-align: top;
+	width: 150px;
+	height: 100%;
+	background-color: rgba(248, 5, 51, 0.5);
+	border-top-right-radius: 80px;
+	border-bottom-right-radius: 80px;
+}
+.switch .right .item {
+	padding: 10px;
+	text-align: left;
+}
+.switch .right .item .iconfont {
+	font-size: 25px;
+	font-weight: bolder;
+}
+.switch .right .item:nth-child(2) {
+	padding: 20px 10px;
+}
+.switch .right .item:nth-child(3) .action {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: rgba(248, 5, 51, 0.1);
+	font-size: 25px;
+	width: 70px;
+	height: 70px;
+	border-radius: 40px;
+	position: relative;
+	left: 27px;
+	cursor: pointer;
+}
+
+.switch .right .item:nth-child(2) {
+	transform: rotate(45deg);
+}
+.switch .right .item:nth-child(2) .action {
+	width: 35px;
+	height: 35px;
+	background-color: black;
+	border-radius: 20px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px;
+}
+
+.switch .right .item:nth-child(4) {
+	text-align: left;
+}
+.switch .right .item:nth-child(4) .action {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: black;
+	border-radius: 20px;
+}
+
+.switch .body .contact-form {
+	width: 640px;
+	height: 340px;
+	padding: 0 10px;
+	position: relative;
+	top: -340px;
+}
+.switch .body .contact-form-text {
+	/*表格参数*/
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 5px 0;
+	border: 0;
+	background: rgba(1, 1, 1, 0.5);
+	padding: 20px 40px;
+	outline: none;
+	color: white;
+}
+
+.switch .body .contact-form-text:hover {
+	/*经过的特效*/
+	box-shadow: 0 0 10px 4px rgba(248, 5, 51, 0.5);
+}
+
+.switch .body textarea.contact-form-text {
+	/*your message 就不可以自己拉大*/
+	resize: none;
+	height: 140px;
+}
+
+.switch .right .item:nth-child(3) .action:hover {
+	background-color: black;
+	color: rgba(248, 5, 51, 0.8);
+}
+/* .backlogo {
+	z-index: -2;
+	max-height: 836px;
+	max-width: 1920px;
+	position: absolute;
+	top: 0;
+}
+.backlogo img {
+	width: 1200px;
+	height: auto;
+	margin-left: 500px;
+	margin-top: 100px;
+	opacity: 0.4;
+} */
